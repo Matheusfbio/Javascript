@@ -22,5 +22,14 @@
 // console.log(umaString.slice(-5, -1));
 // console.log(umaString.slice(-5));
 
+//fragmenta cada string apos cada espaço
 let umaString = "O rato roeu a roupa do rei de roma.";
 console.log(umaString.split(" "));
+// resultado:
+// [
+//   'O',     'rato',
+//   'roeu',  'a',
+//   'roupa', 'do',
+//   'rei',   'de',
+//   'roma.'
+// ]
