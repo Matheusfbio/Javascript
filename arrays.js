@@ -1,4 +1,4 @@
-const pessoas = ["Matheus", "ellicy"];
+// const pessoas = ["Matheus", "ellicy"];
 
 //remove on start of the array
 // const removido = pessoas.pop();
@@ -10,7 +10,7 @@ const pessoas = ["Matheus", "ellicy"];
 // console.log(pessoas);
 // console.log(removido);
 
-console.log(pessoas);
+// console.log(pessoas);
 //Add on the start of the array
 // pessoas.unshift("Lucenilda");
 // pessoas.unshift("Marta");

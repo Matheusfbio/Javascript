@@ -1,0 +1,7 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgb(148, 148, 216);
+  margin: 20%;
+}
