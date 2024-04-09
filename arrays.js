@@ -1,9 +1,11 @@
-// const pessoas = ["Matheus", "ellicy"];
+const pessoas = ["Matheus", "ellicy", { nome: "test", tipo: "teste sitetico" }];
+
+// console.log(pessoas);
 
 //remove on start of the array
-// const removido = pessoas.pop();
-// console.log(pessoas);
-// console.log(removido);
+const removido = pessoas.pop();
+console.log(pessoas);
+console.log(removido);
 
 //remove on endof the array
 // const removido = pessoas.shift();
@@ -25,12 +27,3 @@
 //Add for indice[]
 // pessoas[0] = "Fabio";
 // pessoas[2] = "Zoe";
-
-// document.getElementById("app").innerHTML = `
-// <h1>Hello Vanilla!</h1>
-// <div>
-//   We use the same configuration as Parcel to bundle this sandbox, you can find more
-//   info about Parcel
-//   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-// </div>
-// `;

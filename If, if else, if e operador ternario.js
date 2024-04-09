@@ -26,7 +26,7 @@ const users = [
   {
     name: "Matheus Fabio",
     address: "Rua jaboatão dos guararabes",
-    age: 23,
+    age: 25,
   },
   {
     name: "Lucyellici gomes",
@@ -36,11 +36,16 @@ const users = [
   {
     name: "Lucenilda da conceição",
     address: "Rua São josé",
-    age: 46,
+    age: 40,
   },
 ];
 
-// const age = 48;
+// console.log(users);
+
+// users.forEach((el, ind) => {
+//   console.log(`Tipo de dados é ${ind}: ${typeof el}`);
+// });
+// const age = 20;
 
 // operador ternario.
 // const descUsers =
@@ -49,21 +54,12 @@ const users = [
 //     : "Parabéns, vc ganhou 25% de desconto";
 
 // console.log(descUsers);
+// console.log(users[2].age);
 
-// if (age === 23) {
-//   console.log(
-//     "Parabéns" + " " + users[0].name + " " + "vc ganhou um desconto de 23%"
-//   );
-// } else if (age === 29) {
-//   console.log(
-//     "Parabéns" + " " + users[1].name + " " + "vc ganhou um desconto de 29%"
-//   );
-// } else if (age === 47) {
-//   console.log(
-//     "Parabéns" + " " + users[2].name + " " + "vc ganhou um desconto de 47%"
-//   );
-// } else {
-//   console.log("Infelizmente vc nao tem desconto");
-// }
-
-console.log(users);
+if (users[0].age >= 20 && users[0].age <= 30) {
+  console.log(
+    "Parabéns" + " " + users[0].name + " " + "vc ganhou um desconto de 30%"
+  );
+} else {
+  console.log("Infelizmente vc nao tem desconto");
+}
