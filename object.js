@@ -41,7 +41,9 @@ const person1 = {
   age: 23,
 
   Speak() {
-    console.log(`My age current is ${this.age}`);
+    console.log(
+      `My name is ${this.name} ${this.lastname}, my age current is ${this.age}`
+    );
   },
 
   incrementAge() {
@@ -49,6 +51,6 @@ const person1 = {
   },
 };
 
-person1.incrementAge();
-person1.incrementAge();
+// person1.incrementAge();
+// person1.incrementAge();
 person1.Speak();

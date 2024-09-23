@@ -34,3 +34,4 @@ const diaSemana = data.getDay();
 const diaSemanaTexto = HandleGetDay(diaSemana);
 
 console.log(diaSemana, "-", diaSemanaTexto);
+for
