@@ -22,12 +22,31 @@ async function loginRouter(request, response) {
   response.end(JSON.stringify({ token }));
 }
 
+function isHeadersValid(headers) {
+  // console.log({ headers });
+  try {
+    const auth = headers.authorization.replace(/bearer\s/i, "");
+    JWT.verify(auth, JWT_KEY);
+
+    return true;
+  } catch (error) {
+    console.log(error);
+
+    return false;
+  }
+}
+
 async function handler(request, response) {
   if (request.url === "/login" && request.method === "POST") {
     return loginRouter(request, response);
   }
 
-  response.end("Hello world!");
+  if (!isHeadersValid(request.headers)) {
+    response.writeHead(400);
+    return response.end(JSON.stringify({ error: "Invalid token!" }));
+  }
+
+  response.end(JSON.stringify({ result: "Welcome" }));
 }
 
 const app = createServer(handler).listen(3000, () =>
