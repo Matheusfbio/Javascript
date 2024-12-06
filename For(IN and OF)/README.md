@@ -1,4 +1,4 @@
-### Desafio 1: Explorando Arrays com `for...of`
+### Desafio 1: Explorando Arrays com `for...of` 🆗✅
 
 Você recebeu uma lista de números que representam o estoque de produtos em uma loja. Crie um código que use `for...of` para iterar sobre o array e exiba os números que são pares. Além disso, se o número for maior que 100, imprima uma mensagem especial indicando que o estoque está alto.
 
@@ -34,5 +34,5 @@ const pessoa = {
 **Objetivo:**
 
 1. Use `for...in` para iterar pelas propriedades do objeto.
-2. Exiba no console as propriedades e seus respectivos valores no formato: `"Propriedade: valor"`.
+2. **Exiba no console as propriedades e seus respectivos valores no formato: `"Propriedade: valor"`.**
 3. Adicione uma mensagem especial, como: `"João é jovem!"`, quando a propriedade iterada for "idade".

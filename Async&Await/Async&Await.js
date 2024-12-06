@@ -19,16 +19,20 @@
 // CallFunctions();
 
 function fetchUsers(id) {
-  return fetch(`https://reqdddres.in/api/users?id=${id}`)
+  return fetch(`https://jsonplaceholder.typicode.com/users?id=${id}`)
     .then((data) => data.json())
     .catch((err) => console.error(err));
 }
 
 async function getUsers(id) {
   try {
-    const user = await fetchUsers(id);
-
-    console.log(`user's name is ${user.data.first_name}`);
+    const users = await fetchUsers(id);
+    if (users.length > 0) {
+      const user = users[0];
+      console.log(`User's name is ${user.username}`);
+    } else {
+      console.error("User not found"); // Caso o array esteja vazio.
+    }
   } catch (error) {
     console.error(`Error : ${error}`);
   }
