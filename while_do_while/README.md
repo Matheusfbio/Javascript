@@ -1,4 +1,4 @@
-### **Desafios com `while`**
+### **Desafios com `while`** ✅✅✅
 
 #### **Desafio 1: Soma dos Números Positivos**
 
@@ -8,9 +8,7 @@ Peça ao usuário para inserir números inteiros positivos repetidamente. Use um
 
 #### **Desafio 2: Multiplicação de Fatores**
 
-Escreva um programa que peça ao usuário para inserir um número inteiro positivo e use um loop `while` para calcular o fatorial desse número. Mostre o resultado ao final.
----
-
+## Escreva um programa que peça ao usuário para inserir um número inteiro positivo e use um loop `while` para calcular o fatorial desse número. Mostre o resultado ao final.
 
 ### **Desafios com `do-while`**
 

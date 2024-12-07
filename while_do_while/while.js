@@ -1,34 +1,31 @@
-// let initValue;
-// let sum = 0;
+// #### **Desafio 1: Soma dos Números Positivos** ✅✅✅
 
-// while (true) {
-//   const num = Number(input);
-//   // console.log(`${initValue}`);
-//   // // break;
-//   if (isNaN(num)) {
-//     console.log(
-//       `O numero ainda não foi digitado!, por favor tente novamente...`
-//     );
-//     continue;
-//   } else if (initValue < 0) {
-//     console.log("dale");
-//     continue;
-//   } else {
-//     console.log((num += sum));
-//   }
-//   // console.log(num + sum);
-//   continue;
+// Peça ao usuário para inserir números inteiros positivos repetidamente. Use um loop `while` para somar os números fornecidos. O loop deve terminar assim que o usuário inserir um número negativo. No final, exiba a soma total dos números inseridos.
+
+// let soma = 0;
+// let input = prompt("Insira um numero: ");
+// let num = Number(input);
+
+// while (num >= 0) {
+//   soma += num;
+//   let input2 = prompt("Insira outro numero: ");
+//   num = Number(input2);
 // }
 
-let soma = 0;
-let input = prompt("Insira um numero: ");
-let num = Number(input);
+// console.log(`A soma total dos números inseridos é: ${soma}`);
+// alert(`A soma total dos números inseridos é: ${soma}`);
 
-while (num >= 0) {
-  soma += num;
-  let input2 = prompt("Insira outro numero: ");
-  num = Number(input2);
-}
+// #### **Desafio 2: Multiplicação de Fatores**
 
-console.log(`A soma total dos números inseridos é: ${soma}`);
-alert(`A soma total dos números inseridos é: ${soma}`);
+// ## Escreva um programa que peça ao usuário para inserir um número inteiro positivo e use um loop `while` para calcular o fatorial desse número. Mostre o resultado ao final.
+
+// let input = prompt("insira um numero");
+// let num = Number(input);
+// let result = 1;
+
+// while (num > 1) {
+//   result *= num;
+//   num--;
+//   // break;
+// }
+// alert(result);
