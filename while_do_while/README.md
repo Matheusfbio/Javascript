@@ -1,6 +1,8 @@
 ### **Desafios com `while`** ✅✅✅
 
-#### **Desafio 1: Soma dos Números Positivos**
+#### **Desafio 1: Soma dos Números Positivos** ✅✅✅
+
+---
 
 Peça ao usuário para inserir números inteiros positivos repetidamente. Use um loop `while` para somar os números fornecidos. O loop deve terminar assim que o usuário inserir um número negativo. No final, exiba a soma total dos números inseridos.
 
