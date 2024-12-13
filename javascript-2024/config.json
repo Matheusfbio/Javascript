@@ -1,0 +1,4 @@
+{
+  "server": "http://localhos:8000",
+  "maxConeconnections": 10
+}
