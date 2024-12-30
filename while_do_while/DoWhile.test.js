@@ -1,5 +1,3 @@
-// arquivo: soma.test.js
-
 const { calcularSoma } = require("./index");
 
 test("calcula a soma de números positivos até encontrar um número negativo", () => {
