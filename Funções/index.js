@@ -96,14 +96,57 @@
 
 // Function with rest parameters
 
-function sum(...values) {
-  let res = 0;
-  for (let value of values) {
-    res += value;
-  }
-  return res;
-}
+// function sum(...values) {
+//   let res = 0;
+//   for (let value of values) {
+//     res += value;
+//   }
+//   return res;
+// }
 
-console.log(sum(1, 2, 3, 6));
+// console.log(sum(1, 2, 3, 6, 5));
 
-// modules.exports = { sum };
+// Anonim Function
+// const func = function (param1, param2, param3) {
+//   return `${param1} ${param2} ${param3}\n${param1} ${param2} ${param3}\n${param1} ${param2} ${param3}`;
+// };
+
+// console.log(func(12, 33, 22));
+
+// // modules.exports = { sum };
+
+// setTimeout(() => {
+//   console.log("hello");
+// }, 2000);
+
+// const numeros = [1, 2, 3, 4, 5, 6];
+
+// function calcularSomaCondicional(numeros, condicao) {
+//   return numeros.reduce((prevValue, numero) => {
+//     if (condicao(numero)) {
+//       return prevValue + numero;
+//     }
+//     return prevValue;
+//   }, 0);
+// }
+// // Apenas soma os números pares
+// const somaPares = calcularSomaCondicional(
+//   numeros,
+//   (numero) => numero % 2 === 0
+// );
+// console.log(somaPares); // Saída: 12
+
+// // Apenas soma os números maiores que 3
+// const somaMaioresQueTres = calcularSomaCondicional(
+//   numeros,
+//   (numero) => numero > 3
+// );
+// console.log(somaMaioresQueTres); // Saída: 15
+const sumOddNumbers = function (numbers) {
+  return numbers
+    .filter((num) => num % 2 !== 0)
+    .reduce((sum, num) => sum + num, 0);
+};
+
+// Teste
+console.log(sumOddNumbers([1, 2, 3, 4, 5, 6, 1])); // Saída: 9 (1 + 3 + 5)
