@@ -142,11 +142,28 @@
 //   (numero) => numero > 3
 // );
 // console.log(somaMaioresQueTres); // Saída: 15
-const sumOddNumbers = function (numbers) {
-  return numbers
-    .filter((num) => num % 2 !== 0)
-    .reduce((sum, num) => sum + num, 0);
+
+// const sumOddNumbers = function (numbers) {
+//   return numbers
+//     .filter((num) => num % 2 !== 0)
+//     .reduce((sum, num) => sum + num, 0);
+// };
+
+// // Teste
+// console.log(sumOddNumbers([1, 2, 3, 4, 5, 6, 1])); // Saída: 9 (1 + 3 + 5)
+
+// Function inside Function
+
+const soma = (...value) => {
+  const somar = (val) => {
+    let result = 0;
+    for (values of val) {
+      result += values;
+      return result;
+    }
+
+    return somar(value);
+  };
 };
 
-// Teste
-console.log(sumOddNumbers([1, 2, 3, 4, 5, 6, 1])); // Saída: 9 (1 + 3 + 5)
+console.log(soma(3, 6, 1));
