@@ -17,6 +17,13 @@
 
 function calcularSoma(numeros) {
   let soma = 0;
+  let i = 0;
+
+  while (i < numeros.length) {
+    let num = numeros[i];
+    if (num < 0) break;
+    soma += num;
+    i++;
 
   for (let num of numeros) {
     if (num < 0) break;

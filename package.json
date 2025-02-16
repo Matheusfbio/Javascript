@@ -1,16 +1,16 @@
 {
-  "name": "javascript",
+  "name": "Javascript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learn about the Javascript ecossystem",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch --detectOpenHandles"
   },
   "jest": {
     "testEnvironmnet": "node"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matheus Fabio",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
