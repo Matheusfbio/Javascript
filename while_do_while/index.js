@@ -24,6 +24,10 @@ function calcularSoma(numeros) {
     if (num < 0) break;
     soma += num;
     i++;
+
+  for (let num of numeros) {
+    if (num < 0) break;
+    soma += num;
   }
 
   return soma;
