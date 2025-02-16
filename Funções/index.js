@@ -14,4 +14,20 @@ const count = gen(5, 2);
 // console.log(count.next().value);
 // console.log(count.next().value);
 
-module.exports = gen;
+function* fibonacci() {
+  let a = 0,
+    b = 1;
+  while (true) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
+// const fib = fibonacci(0, 1);
+
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+
+module.exports = { gen, fibonacci };
