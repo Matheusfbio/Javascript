@@ -10,4 +10,7 @@ const sumParIntervalTime = function (init, end) {
 
 console.log(sumParIntervalTime(1, 4));
 
+
 modles.exports = { sumParIntervalTime };
+=======
+
