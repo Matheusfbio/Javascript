@@ -13,10 +13,12 @@ console.log(dadosPessoais);
 
 // Desafio 2
 
-const numeros = [2, 4, 6, 8, 10];
+// const numeros = [2, 4, 6, 8, 10];
 
-const transformandoNumeros = numeros.map((numerosSquare) => {
-  return numerosSquare ** 2 * 2;
-});
+// const transformandoNumeros = numeros.map((numerosSquare) => {
+//   return numerosSquare ** 2 * 2;
+// });
 
-console.log(transformandoNumeros);
+// console.log(transformandoNumeros);
+
+module.exports = { dadosPessoais };
