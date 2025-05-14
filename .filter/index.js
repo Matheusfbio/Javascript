@@ -1,6 +1,3 @@
-function someFilter(user) {
-}
-
 const mockUser = [
   {
     name: 'Eva',
@@ -29,15 +26,17 @@ const mockUser = [
 ]
 
 
-const showUser = mockUser.map((user) => {
-  return user;
-});
+// const showUser = mockUser.map((user) => {
+//   return user;
+// });
 
 // console.table(showUser)
 
+function filterUserByOccupationAndAge(mockUser) {
+  const filterUsers = mockUser.filter((filterUser) => filterUser.occupation.includes("Software Engineer") && filterUser.age < 30);
+  return filterUsers;
+}
 
-const filterUsers = mockUser.filter((filterUser) => filterUser.name === "John" && filterUser.occupation.includes("Software Engineer"));
-console.table(filterUsers);
+console.table(filterUserByOccupationAndAge(mockUser));
 
-
-module.exports = { someFilter }
+module.exports = { filterUserByOccupationAndAge }
