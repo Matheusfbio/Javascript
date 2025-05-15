@@ -1,4 +1,3 @@
-// const filterUserByOccupationAndAge = require('./index.js');
 const { filterUserByOccupationAndAge } = require('./index.js');
 
 describe('filterUserByOccupationAndAge', () => {
