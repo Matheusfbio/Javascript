@@ -27,3 +27,6 @@ btnPesquisar.addEventListener("click", () => {
   })
   console.log(result)
 })
+
+
+// module.exports = {}
