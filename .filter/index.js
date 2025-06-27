@@ -1,3 +1,7 @@
+
+function someFilter(user) {
+}
+
 const mockUser = [
   {
     name: 'Eva',
@@ -40,3 +44,16 @@ function filterUserByOccupationAndAge(mockUser) {
 console.table(filterUserByOccupationAndAge(mockUser));
 
 module.exports = { filterUserByOccupationAndAge }
+
+const showUser = mockUser.map((user) => {
+  return user;
+});
+
+// console.table(showUser)
+
+
+const filterUsers = mockUser.filter((filterUser) => filterUser.name === "John" && filterUser.occupation.includes("Software Engineer"));
+console.table(filterUsers);
+
+
+module.exports = { someFilter }

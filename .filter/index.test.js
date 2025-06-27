@@ -1,3 +1,4 @@
+
 const { filterUserByOccupationAndAge } = require('./index.js');
 
 describe('filterUserByOccupationAndAge', () => {
@@ -73,3 +74,6 @@ describe('filterUserByOccupationAndAge', () => {
 });
 
 // We recommend installing an extension to run jest tests.
+test('test', () => {
+  expect(1).toBe(1)
+})
