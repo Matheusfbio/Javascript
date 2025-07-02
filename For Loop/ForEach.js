@@ -10,11 +10,18 @@ const productNameUpperCase = products.map((product) => {
 
 console.log("-----------------------------------")
 
-const showProducts = products.forEach((product) => {
-  console.log(product.nome, "-", new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(product.preco.toFixed(2)))
-})
-
-const showAboutProduct = products.map((product) => {
-  console.log("O produto " + product.nome + " custa " + new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(product.preco.toFixed(2)))
+products.forEach((product) => {
+  const precoFormatado = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(product.preco);
+  console.log(`${product.nome} - ${precoFormatado}`);
 });
 
+console.log("--------------------------------------")
+const showAboutProduct = products.map((product) => {
+  const formatPrice = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", }).format(product.preco)
+  return `O produto ${product.name} custa ${formatPrice}`
+});
+
+console.log(showAboutProduct)
