@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "Learn about the Javascript ecossystem",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest --watch --detectOpenHandles"
-  },
-  "jest": {
-    "testEnvironmnet": "node"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Matheus Fabio",
