@@ -1,9 +1,8 @@
-function keyValues() {
+function keyValues(obj) {
   const maps = new Map();
-  maps.set("id", "4084ba73-dde1-5257-8d76-44eedd5e6de5");
-  maps.set("email", "matheus@test.com");
-  maps.set("name", "Matheus fabio");
-
+  for(const [key, value] of Object.entries(obj)) {
+    maps.set(key, value);
+  }
   return maps;
 }
 

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Learn about the Javascript ecossystem",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
   },
