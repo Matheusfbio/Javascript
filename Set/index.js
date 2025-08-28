@@ -11,5 +11,5 @@ function SetValues(input) {
 }
 
 SetValues(["apple", "banana", "cherry", "apple"]);
-
+  
 module.exports = SetValues;
