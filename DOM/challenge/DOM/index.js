@@ -7,15 +7,18 @@ countries.map((e, key) => {
   const renderCountries = document.createElement("div");
   renderCountries.setAttribute("id", "c" + key);
   renderCountries.setAttribute("class", "country ct-1");
-  renderCountries.innerHTML = e
+
+  const countryName = document.createElement("span");
+  countryName.textContent = e;
+  renderCountries.appendChild(countryName);
   
   const btn_delete = document.createElement("img");
   btn_delete.setAttribute("src", "./delete.png");
   btn_delete.setAttribute("class", "btn-delete");
   renderCountries.appendChild(btn_delete);
 
-  renderCountries.addEventListener("click", (event) => {
-    country.removeChild(event.target.parentNode);  
+  btn_delete.addEventListener("click", () => {
+    country.removeChild(renderCountries);
   })
   country.appendChild(renderCountries);
 })
