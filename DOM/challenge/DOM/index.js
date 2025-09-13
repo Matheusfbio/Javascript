@@ -1,3 +1,4 @@
+
 const country = document.querySelector("#countries");
 const btn_countries = [...document.querySelectorAll(".country")];
 
