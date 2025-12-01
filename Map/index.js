@@ -8,3 +8,10 @@ function keyValues(obj) {
 
 
 module.exports = keyValues;
+
+
+const Values = new Map();
+Values.set("Username", "Matheus Fabio")
+Values.set("Email", "Matheus@test.com")
+
+console.log(Values);

@@ -15,7 +15,6 @@ function studentInfo(name, age, grade) {
   this.data_anonymous = function() {
     setTimeout(() => {
       console.log(this.name, this.age, this.grade);
-   
     }, 2000);
   }
 }
