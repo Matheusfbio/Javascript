@@ -1,17 +1,16 @@
-function keyValues(obj) {
-  const maps = new Map();
-  for(const [key, value] of Object.entries(obj)) {
-    maps.set(key, value);
+const users = new Map();
+
+users.set("alice", { name: "Alice", age: 25, city: "New York" });
+users.set("bob", { name: "Bob", age: 30, city: "San Francisco" });
+users.set("charlie", { name: "charlie", age: 35, city: "Los Angeles" });
+
+function getUserInfo(username) {
+  if (users.has(username)) {
+    return users.get(username);
+  } else {
+    return "User not found";
   }
-  return maps;
 }
 
-
-module.exports = keyValues;
-
-
-const Values = new Map();
-Values.set("Username", "Matheus Fabio")
-Values.set("Email", "Matheus@test.com")
-
-console.log(Values);
+console.log(getUserInfo("charlie")); // { name: "charlie", age: 35, city: "Los Angeles" }
+console.log(getUserInfo("luis")); // { name: "charlie", age: 35, city: "Los Angeles" }

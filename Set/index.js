@@ -1,15 +1,17 @@
+const music = new Set([
+  "rock",
+  "pop",
+  "jazz",
+  "classical",
+  "hip hop",
+]);
 
+// Add a new genre
+music.add("electronic");
+music.add("electronic-remix");
 
-function SetValues(input) {
-  const values = [...input];
+console.table(music);
 
-  const uniqueValues = new Set(values);
-
-  console.table(uniqueValues);
-
-  return uniqueValues;
-}
-
-SetValues(["apple", "banana", "cherry", "apple"]);
-  
-module.exports = SetValues;
+music.forEach((genere) => {
+  genere.endsWith("-remix") ? console.log(`${genere} is a remix genre`) : null;
+})
