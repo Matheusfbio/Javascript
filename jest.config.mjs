@@ -1,4 +1,7 @@
 export default {
-  testEnvironment: 'node',
-  transform: {}, // Não usamos Babel, então desativa qualquer transformação
+  testEnvironment: "node",
+  transform: {
+    "^.+\\.[jt]sx?$": "babel-jest",
+  },
+  transformIgnorePatterns: ["node_modules/(?!(uuid)/)"],
 };
